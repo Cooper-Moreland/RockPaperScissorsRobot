@@ -75,5 +75,5 @@ while True:
             servo_2.throttle = 0        #servos at rest
 
     prev_state = cur_state      #make the button sticky
-    
-    ```
+
+```
