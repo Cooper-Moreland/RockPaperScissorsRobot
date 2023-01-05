@@ -2,7 +2,7 @@
 
 ## Code
 
-'''python
+```python
 import board
 from digitalio import DigitalInOut, Direction, Pull
 import digitalio
@@ -76,4 +76,4 @@ while True:
 
     prev_state = cur_state      #make the button sticky
     
-    '''
+    ```
