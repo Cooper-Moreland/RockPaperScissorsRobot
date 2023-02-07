@@ -6,6 +6,12 @@
 
 ## CAD Renderings
 
+## Images
+
+## Materials Used
+
+## Wiring Diagram
+
 ## Code
 
 ```python
@@ -231,3 +237,7 @@ while True:
     time.sleep(0.1)     #debounce
     
 ```
+
+## Obastacles/Errors
+
+## Tips
