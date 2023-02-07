@@ -1,5 +1,7 @@
 # RockPaperScissorsRobot
 
+## [Planning Document](https://docs.google.com/document/d/1lytFuNmM_0qm5QYV4Yy-9biDfxlLaukL8A0iCGQVoEs/edit?usp=sharing)
+
 ## Code
 
 ```python
