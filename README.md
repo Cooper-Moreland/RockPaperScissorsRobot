@@ -8,6 +8,8 @@
 
 ![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-07%20102128.png?raw=true)
 
+![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-07%20102153.png?raw=true)
+
 ## Images
 
 ## Materials Used
