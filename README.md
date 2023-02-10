@@ -12,8 +12,6 @@
 
 ![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-10%20092152.png?raw=true)
 
-OLD IMAGES, NEED TO BE REPLACED!
-
 ## Images
 
 ## Materials Used
