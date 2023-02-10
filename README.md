@@ -258,4 +258,8 @@ while True:
 
 ## Obastacles/Errors
 
+We were unable to 3d print a hand for showing the rock paper scissors gestures, so we had to have the lcd screen display the computer input. The lack of a hand meant no servos were needed anymore which simplified the design for the project.
+
 ## Tips
+
+Start with the hardest part of the project first to make sure you can compete the whole thing in the end since you have more time to compete the more complicated parts.
