@@ -16,6 +16,14 @@
 
 ## Materials Used
 
+- Acrylic
+- Panel Mount Pushbutton 3x
+- Panel Mount LED 2x
+- Panel Mount Switch
+- LCD Backpack and Screen
+- Metro M4 Express
+- 6xAA Battery Pack w/ Batteries
+
 ## Wiring Diagram
 
 ![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-09%20094446.png?raw=true)
