@@ -254,6 +254,8 @@ while True:
     
 ```
 
+Code for the original design w/ the servos and hand
+
 ## Obastacles/Errors
 
 We were unable to 3d print a hand for showing the rock paper scissors gestures, so we had to have the lcd screen display the computer input. The lack of a hand meant no servos were needed anymore which simplified the design for the project.
