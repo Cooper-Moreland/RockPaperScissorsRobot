@@ -8,7 +8,7 @@
 
 ![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-10%20091846.png?raw=true)
 
-![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-07%20102153.png?raw=true)
+![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-10%20091912.png?raw=true)
 
 OLD IMAGES, NEED TO BE REPLACED!
 
