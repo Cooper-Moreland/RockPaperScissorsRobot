@@ -26,7 +26,7 @@
 
 ![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-09%20094446.png?raw=true)
 
-R.P.S. Hand Wiring if we had done the original design, The wiring shown for the pushbuttons is that of a panel mount pushbutton which is what I used in the actual wiring.
+R.P.S. Hand Wiring if we had done the original design (w/ servos), The wiring shown for the pushbuttons is that of a panel mount pushbutton which is what I used in the actual wiring.
 
 ## Code
 
