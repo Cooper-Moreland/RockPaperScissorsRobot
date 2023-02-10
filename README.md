@@ -10,8 +10,6 @@
 
 ![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-10%20091846.png?raw=true)
 
-![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-10%20092152.png?raw=true)
-
 ## Images
 
 ## Materials Used
