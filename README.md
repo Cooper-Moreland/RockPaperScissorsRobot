@@ -2,7 +2,7 @@
 
 ## [Planning Document](https://docs.google.com/document/d/1lytFuNmM_0qm5QYV4Yy-9biDfxlLaukL8A0iCGQVoEs/edit?usp=sharing)
 
-## [Onshape Document not included yet](google.com)
+## [Onshape Document not included yet](https://cvilleschools.onshape.com/documents/1c89e5fa0ad5e4b1d4592e61/w/5c6db6f0fa904006adf49133/e/296a1dd83830169753903b0e?renderMode=0&uiState=63e6515d5811cb0608bd567d)
 
 ## CAD Renderings
 
