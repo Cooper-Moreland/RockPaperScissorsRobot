@@ -4,6 +4,10 @@
 
 ## [Onshape Document](https://cvilleschools.onshape.com/documents/1c89e5fa0ad5e4b1d4592e61/w/5c6db6f0fa904006adf49133/e/296a1dd83830169753903b0e?renderMode=0&uiState=63e6515d5811cb0608bd567d)
 
+## Overview
+
+Three button inputs for either rock paper or scissors from the human. A countdown LED counts down after you press the start button. press down your (human) input on the thrid flash of the LED. The lcd will display the computers input (rock paper or scissors) if you win or the game is a tie the lcd says "Good Game." If you lose the game the lcd picks from 10 random insults to display on the lcd.
+
 ## CAD Renderings
 
 ![frank](https://github.com/Cooper-Moreland/RockPaperScissorsRobot/blob/main/Screenshot%202023-02-10%20091912.png?raw=true)
