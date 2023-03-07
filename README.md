@@ -256,6 +256,209 @@ while True:
 
 Code for the original design w/ the servos and hand
 
+```python
+import board
+from digitalio import DigitalInOut, Direction, Pull
+import digitalio
+import time
+import pwmio    
+import random
+from random import randint
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface       #imports
+
+i2c = board.I2C()
+led = digitalio.DigitalInOut(board.D13)      #led in pin 8
+led.direction = digitalio.Direction.OUTPUT      #led as output
+btn0 = DigitalInOut(board.D3)
+btn0.direction = Direction.INPUT
+btn0.pull = Pull.UP
+btn1 = DigitalInOut(board.D2)       #ROCK input
+btn1.direction = Direction.INPUT
+btn1.pull = Pull.UP
+btn2 = DigitalInOut(board.D4)       #SCISSORS input
+btn2.direction = Direction.INPUT
+btn2.pull = Pull.UP
+btn3 = DigitalInOut(board.D5)       #PAPER input
+btn3.direction = Direction.INPUT
+btn3.pull = Pull.UP                             #all 4 buttons as inputs
+
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)      #use 0x3f if not working at 0x27
+prev_state1 = btn1.value        #player ROCK input
+prev_state2 = btn2.value        #player SCISSORS input
+prev_state3 = btn3.value        #player PAPER input
+lcd.backlight = True
+prev_state0 = btn0.value
+ 
+while True:
+    cur_state0 = btn0.value       #btn0 outputs its current val
+    if cur_state0 != prev_state0:     #if current state isn't previous state
+        if not cur_state0:       #if button pressed
+            print("btn0 is down")
+            led.value = True
+            time.sleep(0.6)
+            led.value = False
+            time.sleep(0.6)
+            led.value = True
+            time.sleep(0.6)
+            led.value = False
+            time.sleep(0.6)
+            led.value = True
+            time.sleep(0.6)
+            led.value = False       #blink led 3 times
+            r1 = random.randint(1, 3)       #produce a random integer between and including 1 - 3
+            if r1 == 1:
+                lcd.print("ROCK")
+                time.sleep(1)
+                lcd.clear()
+                cur_state2 = btn2.value       #btn2 outputs its current val
+                if cur_state2 != prev_state2:     #if current state isn't previous state
+                    if not cur_state2:
+                        u1 = random.randint(1,10)        #random number
+                        if u1 == 1:
+                            lcd.print("Your mom looks    like a pig")
+                        if u1 == 2:
+                            lcd.print("Your parents don'tlove u")
+                        if u1 == 3:
+                            lcd.print("You're maidenless")
+                        if u1 == 4:
+                            lcd.print("scanning...braincell count: 0")
+                        if u1 == 5:
+                            lcd.print("u humans really suck at this")       
+                        if u1 == 6:
+                            lcd.print("You're a walking disaster")
+                        if u1 == 7:
+                            lcd.print("ur as smart as a mcchicken")
+                        if u1 == 8:
+                            lcd.print("You never stood a chance")
+                        if u1 == 9:
+                            lcd.print("I saw all 14,000,605 outcomes")
+                        if u1 == 10:
+                            lcd.print("ur a lower life form after all")
+                        time.sleep(4)
+                    else:
+                        lcd.clear()
+                cur_state1 = btn1.value       #btn1 outputs its current val
+                if cur_state1 != prev_state1:     #if current state isn't previous state
+                    if not cur_state1:       #if button pressed
+                        lcd.print("Good Game")
+                        time.sleep(4)
+                        lcd.clear()
+                else:
+                    lcd.clear()
+                cur_state3 = btn3.value       #btn3 outputs its current val
+                if cur_state3 != prev_state3:     #if current state isn't previous state
+                    if not cur_state3:       #if button pressed
+                        lcd.print("Good Game")
+                        time.sleep(4)
+                        lcd.clear()
+                else:
+                    lcd.clear()
+            if r1 == 2:
+                lcd.print("SCISSORS")
+                time.sleep(1)
+                lcd.clear()
+                cur_state3 = btn3.value       #btn3 outputs its current val
+                if cur_state3 != prev_state3:     #if current state isn't previous state
+                    if not cur_state3:
+                        u2 = random.randint(1,10)        #random number
+                        if u2 == 1:
+                            lcd.print("Your mom looks    like a pig")
+                        if u2 == 2:
+                            lcd.print("Your parents don'tlove u")
+                        if u2 == 3:
+                            lcd.print("You're maidenless")
+                        if u2 == 4:
+                            lcd.print("scanning...braincell count: 0")
+                        if u2 == 5:
+                            lcd.print("u humans really suck at this")       
+                        if u2 == 6:
+                            lcd.print("You're a walking disaster")
+                        if u2 == 7:
+                            lcd.print("ur as smart as a mcchicken")
+                        if u2 == 8:
+                            lcd.print("You never stood a chance")
+                        if u2 == 9:
+                            lcd.print("I saw all 14,000,605 outcomes")
+                        if u2 == 10:
+                            lcd.print("ur a lower life form after all")
+                        time.sleep(4)
+                    else:
+                        lcd.clear()
+                cur_state1 = btn1.value       #btn1 outputs its current val
+                if cur_state1 != prev_state1:     #if current state isn't previous state
+                    if not cur_state1:       #if button pressed
+                        lcd.print("Good Game")
+                        time.sleep(4)
+                        lcd.clear()
+                else:
+                    lcd.clear()
+                cur_state2 = btn2.value       #btn2 outputs its current val
+                if cur_state2 != prev_state2:     #if current state isn't previous state
+                    if not cur_state2:       #if button pressed
+                        lcd.print("Good Game")
+                        time.sleep(4)
+                        lcd.clear()
+                else:
+                    lcd.clear()
+            if r1 == 3:
+                lcd.print("PAPER")
+                time.sleep(1)
+                lcd.clear()
+                cur_state1 = btn1.value       #btn1 outputs its current val
+                if cur_state1 != prev_state1:     #if current state isn't previous state
+                    if not cur_state1:
+                        u3 = random.randint(1,10)
+                        if u3 == 1:
+                            lcd.print("ur mom looks    like a pig")
+                        if u3 == 2:
+                            lcd.print("ur parents don'tlove u")
+                        if u3 == 3:
+                            lcd.print("ur maidenless")
+                        if u3 == 4:
+                            lcd.print("scanning...braincell count: 0")
+                        if u3 == 5:
+                            lcd.print("u humans really suck at this")     
+                        if u3 == 6:
+                            lcd.print("You're a walking disaster")
+                        if u3 == 7:
+                            lcd.print("ur as smart as a mcchicken")
+                        if u3 == 8:
+                            lcd.print("You never stood a chance")
+                        if u3 == 9:
+                            lcd.print("I saw all 14,000,605 outcomes")
+                        if u3 == 10:
+                            lcd.print("ur a lower life form after all")
+                        time.sleep(4)
+                    else:
+                        lcd.clear()
+                cur_state2 = btn2.value       #btn2 outputs its current val
+                if cur_state2 != prev_state2:     #if current state isn't previous state
+                    if not cur_state2:       #if button pressed
+                        lcd.print("Good Game")
+                        time.sleep(4)
+                        lcd.clear()
+                else:
+                    lcd.clear()
+                cur_state3 = btn3.value       #btn3 outputs its current val
+                if cur_state3 != prev_state3:     #if current state isn't previous state
+                    if not cur_state3:       #if button pressed
+                        lcd.print("Good Game")
+                        time.sleep(4)
+                        lcd.clear()
+                else:
+                    lcd.clear()
+        else:
+            print("btn0 is up")      #if button isn't pressed
+            led.value = False       #led off
+
+    prev_state0 = cur_state0        #make the utton sticky
+    time.sleep(0.1)     #debounce
+    
+```
+
+Code for later desig w/ just buttons and lcd
+
 ## Obastacles/Errors
 
 We were unable to 3d print a hand for showing the rock paper scissors gestures, so we had to have the lcd screen display the computer input. The lack of a hand meant no servos were needed anymore which simplified the design for the project.
