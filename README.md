@@ -461,8 +461,8 @@ Code for later desig w/ just buttons and lcd
 
 ## Obastacles/Errors
 
-We were unable to 3d print a hand for showing the rock paper scissors gestures, so we had to have the lcd screen display the computer input. The lack of a hand meant no servos were needed anymore which simplified the design for the project.
+We were unable to 3d print a hand for showing the rock paper scissors gestures, so we had to have the lcd screen display the computer input. The lack of a hand meant no servos were needed anymore which simplified the design for the project. Poor planning was the main cause for out inability o=to complete the project. If we were to do this roject again we would split up the work evenly so we could finish the robot hand in time and have a completed project.
 
 ## Tips
 
-Start with the hardest part of the project first to make sure you can compete the whole thing in the end since you have more time to compete the more complicated parts.
+Start with the hardest part of the project first to make sure you can compete the whole thing in the end since you have more time to compete the more complicated parts. If metro m4 isn't opening its serial monitor in python first press the reset button then plug it into a different port. If CIRCUITPY (D:) still doesn't show up in file explorer, unplug the power portion of the lcd, upload the code/plug in the board, then rewire the powere to 3.3V or 5V depending on which works.
