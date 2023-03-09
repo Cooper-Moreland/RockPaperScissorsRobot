@@ -456,12 +456,12 @@ while True:
             print("btn0 is up")      #if button isn't pressed
             led.value = False       #led off
 
-    prev_state0 = cur_state0        #make the utton sticky
+    prev_state0 = cur_state0        #make the button sticky
     time.sleep(0.1)     #debounce
     
 ```
 
-Code for later desig w/ just buttons and lcd
+Code for later design w/ just buttons and lcd
 
 ## Obastacles/Errors
 
