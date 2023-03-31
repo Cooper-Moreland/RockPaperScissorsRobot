@@ -16,6 +16,8 @@ Three button inputs for either rock paper or scissors from the human. A countdow
 
 ## Images
 
+None, the project is incomplete.
+
 ## Materials Used
 
 - Acrylic
